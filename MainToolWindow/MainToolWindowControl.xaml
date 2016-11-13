@@ -15,7 +15,7 @@
     </UserControl.ContextMenu>
     <Grid>
         <StackPanel Orientation="Vertical">
-            <TextBlock x:Name="statusTextBlock" Margin="10"/>
+            <TextBlock x:Name="statusTextBlock" Margin="10" FontSize="14"/>
         </StackPanel>
     </Grid>
 </UserControl>

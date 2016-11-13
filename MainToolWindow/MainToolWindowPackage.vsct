@@ -13,7 +13,7 @@
       </Button>
     </Buttons>
     <Bitmaps>
-      <Bitmap guid="guidImages" href="Resources\MainToolWindowCommand.png" usedList="bmpPic1"/>
+      <Bitmap guid="guidImages" href="..\Resources\w3wpHUD.png" usedList="bmpPic1"/>
     </Bitmaps>
   </Commands>
   <Symbols>

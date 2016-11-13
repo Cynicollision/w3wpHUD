@@ -68,14 +68,18 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <VSCTCompile Include="MainToolWindow\MainToolWindowPackage.vsct">
-      <ResourceName>Menus.ctmenu</ResourceName>
-    </VSCTCompile>
-    <Content Include="MainToolWindow\Resources\MainToolWindowCommand.png" />
-    <Content Include="MainToolWindow\Resources\MainToolWindowPackage.ico">
+    <Content Include="Resources\w3wpHUD.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <Content Include="Resources\w3wpHUD.png" />
+    <Content Include="w3wpHUDpreview.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <VSCTCompile Include="MainToolWindow\MainToolWindowPackage.vsct">
+      <ResourceName>Menus.ctmenu</ResourceName>
+    </VSCTCompile>
   </ItemGroup>
   <ItemGroup>
     <Page Include="MainToolWindow\MainToolWindowControl.xaml">
