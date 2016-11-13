@@ -3,7 +3,7 @@ A Visual Studio 2015 extension that provides a heads-up display of running w3wp.
 
 It is essentially a wrapper around running the following command:
 ```
-c:\windows\system32\inetsvr\appcmd list wp
+c:\windows\system32\inetsrv\appcmd list wp
 ```
 ###Instructions
 You will need to install the [Visual Studio 2015 SDK](https://msdn.microsoft.com/en-us/library/bb166441.aspx) in order to build this solution. 
