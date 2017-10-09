@@ -9,7 +9,7 @@ c:\windows\system32\inetsrv\appcmd list wp
 
 You can find w3wp HUD in the [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/f6b20277-984e-4c4b-a3ac-f1713f2437cd).
 
-Alternatively, you can clone and build it yourself. You will need to install the [Visual Studio 2015 SDK](https://msdn.microsoft.com/en-us/library/bb166441.aspx) in order to do so. 
+Alternatively, you can clone and build it yourself. You will need to install the Visual Studio 2017 SDK in order to do so. 
 
 1. Clone this repository.
 2. Build w3wpHUD.sln.
