@@ -1,6 +1,8 @@
 # w3wp HUD
 A Visual Studio 2017 extension that provides a heads-up display of running w3wp.exe processes. Helpful for determining which w3wp.exe process to connect the debugger to when you have more than one running.
 
+![alt text](w3wpHUDpreview.png "w3wpHUD screenshot")
+
 It is essentially a wrapper around running the following command:
 ```
 c:\windows\system32\inetsrv\appcmd list wp
