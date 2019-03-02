@@ -1,5 +1,5 @@
 # w3wp HUD
-A Visual Studio 2017 extension that provides a heads-up display of running w3wp.exe processes. Helpful for determining which w3wp.exe process to connect the debugger to when you have more than one running.
+A Visual Studio extension that provides a heads-up display of running w3wp.exe processes. Helpful for determining which IIS w3wp.exe process to connect the debugger to when you have more than one running.
 
 ![alt text](w3wpHUDpreview.png "w3wpHUD screenshot")
 
@@ -23,4 +23,4 @@ Find w3wp HUD in the "View > Other Windows" menu in Visual Studio. Dock the tool
 
 ### Notes:
 * Visual Studio must be running in adminstrator mode in order to use this extension.
-* Visual Studio 2015 is also supported.
+* Compatible with Visual Studio 2015, 2017, and 2019.
