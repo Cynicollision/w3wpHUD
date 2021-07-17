@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>23d1fb7b-3f86-4cfb-a751-cff02556c109</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>w3wpHUDShared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AppCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainToolWindow\MainToolWindow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainToolWindow\MainToolWindowCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainToolWindow\MainToolWindowControl.xaml.cs">
+      <DependentUpon>MainToolWindowControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MainToolWindow\MainToolWindowPackage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)MainToolWindow\MainToolWindowControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Key.snk" />
+    <Content Include="$(MSBuildThisFileDirectory)MainToolWindow\MainToolWindowPackage.vsct" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Resources\w3wpHUD.ico" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\w3wpHUD.png" />
+    <Content Include="$(MSBuildThisFileDirectory)w3wpHUDpreview.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)VSPackage.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
