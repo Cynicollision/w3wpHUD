@@ -1,5 +1,8 @@
 # w3wp HUD
-A Visual Studio extension that provides a heads-up display of running w3wp.exe processes. Helpful for determining which IIS w3wp.exe process to connect the debugger to when you have more than one running.
+
+![alt text](https://vsmarketplacebadge.apphb.com/version/Cynicollision.w3wpHUD.svg "Visual Studo Marketplace version badge") ![alt text](https://vsmarketplacebadge.apphb.com/installs/Cynicollision.w3wpHUD.svg "Visual Studo Marketplace installs badge")
+
+A Visual Studio extension that provides a heads-up display of running w3wp.exe processes. Helpful for determining which IIS w3wp.exe process to connect the debugger to when you have more than one running and are frequently resetting ISS.
 
 ![alt text](w3wpHUDpreview.png "w3wpHUD screenshot")
 
@@ -9,13 +12,13 @@ c:\windows\system32\inetsrv\appcmd list wp
 ```
 ### Installation
 
-You can find w3wp HUD in the [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/f6b20277-984e-4c4b-a3ac-f1713f2437cd).
+You can find w3wp HUD in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Cynicollision.w3wpHUD).
 
-Alternatively, you can clone and build it yourself. You will need to install the Visual Studio 2017 SDK in order to do so. 
+Alternatively, you can clone and build it yourself. You will need to install the [Visual Studio SDK](https://docs.microsoft.com/en-us/visualstudio/extensibility/installing-the-visual-studio-sdk?view=vs-2019) in order to do so. 
 
 1. Clone this repository.
 2. Build w3wpHUD.sln.
-2. Run the generated w3wpHUD.vsix to install the extension (located in "bin/" directory).
+2. Run (double-click) the generated w3wpHUD.vsix to install the extension (located in "bin/" directory).
 
 ### Usage Instructions
 
