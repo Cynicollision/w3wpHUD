@@ -26,4 +26,4 @@ Find w3wp HUD in the "View > Other Windows" menu in Visual Studio. Dock the tool
 
 ### Notes:
 * Visual Studio must be running in adminstrator mode in order to use this extension.
-* Compatible with Visual Studio 2015, 2017, and 2019.
+* Compatible with Visual Studio 2015, 2017, 2019, and 2022.
