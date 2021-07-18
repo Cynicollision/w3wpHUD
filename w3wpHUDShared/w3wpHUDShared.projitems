@@ -25,7 +25,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)Key.snk" />
-    <Content Include="$(MSBuildThisFileDirectory)MainToolWindow\MainToolWindowPackage.vsct" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)Resources\w3wpHUD.ico" />

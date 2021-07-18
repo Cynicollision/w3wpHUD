@@ -14,14 +14,14 @@
     <ProjectGuid>{BF266AAB-2A68-4179-B5AF-C0E3DF7AA972}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>w3wpHUD_22</RootNamespace>
-    <AssemblyName>w3wpHUD-22</AssemblyName>
+    <RootNamespace>w3wpHUD</RootNamespace>
+    <AssemblyName>w3wpHUD</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <GeneratePkgDefFile>true</GeneratePkgDefFile>
     <UseCodebase>true</UseCodebase>
     <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
-    <IncludeDebugSymbolsInVSIXContainer>false</IncludeDebugSymbolsInVSIXContainer>
-    <IncludeDebugSymbolsInLocalVSIXDeployment>false</IncludeDebugSymbolsInLocalVSIXDeployment>
+    <IncludeDebugSymbolsInVSIXContainer>true</IncludeDebugSymbolsInVSIXContainer>
+    <IncludeDebugSymbolsInLocalVSIXDeployment>true</IncludeDebugSymbolsInLocalVSIXDeployment>
     <CopyBuildOutputToOutputDirectory>true</CopyBuildOutputToOutputDirectory>
     <CopyOutputSymbolsToOutputDirectory>true</CopyOutputSymbolsToOutputDirectory>
     <StartAction>Program</StartAction>
@@ -62,12 +62,21 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.VisualStudio.SDK" Version="16.0.206" ExcludeAssets="runtime" />
-    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="16.10.1056" />
+    <PackageReference Include="Microsoft.VisualStudio.SDK" Version="16.10.31321.278" ExcludeAssets="runtime">
+      <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="16.10.1055">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.0.0-preview.1" />
     <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.0.63-preview.1" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="w3wpHUDpreview.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <VSCTCompile Include="..\Resources\MainToolWindowPackage.vsct">
       <Link>MainToolWindowPackage.vsct</Link>
       <ResourceName>Menus.ctmenu</ResourceName>
@@ -75,9 +84,7 @@
     <Content Include="..\Resources\w3wpHUD.ico">
       <Link>w3wpHUD.ico</Link>
       <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="..\Resources\w3wpHUD.png">
-      <Link>w3wpHUD.png</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="..\w3wpHUDShared\w3wpHUDShared.projitems" Label="Shared" />
