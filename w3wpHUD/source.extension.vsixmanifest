@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="w3wpHUD.Cynicollision.3c6c7541-a9d7-4a33-b528-f216a5c51787" Version="1.2" Language="en-US" Publisher="Sean Normoyle" />
+        <Identity Id="w3wpHUD.Cynicollision.3c6c7541-a9d7-4a33-b528-f216a5c51787" Version="1.2.1" Language="en-US" Publisher="Sean Normoyle" />
         <DisplayName>w3wp HUD</DisplayName>
         <Description xml:space="preserve">View IIS worker process IDs at a glance</Description>
         <MoreInfo>https://github.com/Cynicollision/w3wpHUD</MoreInfo>
-        <Icon>w3wpHUD.ico</Icon>
+        <Icon>Resources\w3wpHUD.ico</Icon>
         <PreviewImage>w3wpHUDpreview.png</PreviewImage>
         <Tags>iis,w3wp,w3wp.exe,ASP.NET</Tags>
     </Metadata>

@@ -82,7 +82,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MainToolWindow\MainToolWindowPackage.vsct" />
-    <Content Include="Resources\w3wpHUD.ico" />
+    <Content Include="Resources\w3wpHUD.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Content Include="Resources\w3wpHUD.png" />
     <Content Include="w3wpHUDpreview.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
