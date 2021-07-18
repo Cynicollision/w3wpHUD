@@ -88,15 +88,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <VSCTCompile Include="..\Resources\MainToolWindowPackage.vsct">
+    <VSCTCompile Include="MainToolWindow\MainToolWindowPackage.vsct">
       <Link>MainToolWindowPackage.vsct</Link>
       <ResourceName>Menus.ctmenu</ResourceName>
     </VSCTCompile>
-    <Content Include="..\Resources\w3wpHUD.ico">
-      <Link>w3wpHUD.ico</Link>
-      <IncludeInVSIX>true</IncludeInVSIX>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Page Include="MainToolWindow\MainToolWindowControl.xaml">
